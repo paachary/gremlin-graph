@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.1/graphml.xsd">
+  <key id="labelV" for="node" attr.name="labelV" attr.type="string"/>
+  <key id="code" for="node" attr.name="code" attr.type="string"/>
+  <key id="born_on" for="node" attr.name="born_on" attr.type="string"/>
+  <key id="gender" for="node" attr.name="gender" attr.type="string"/>
+  <key id="personal_trait" for="node" attr.name="personal_trait" attr.type="string"/>
+  <key id="name" for="node" attr.name="name" attr.type="string"/>
+  <key id="desc" for="node" attr.name="desc" attr.type="string"/>
+  <key id="labelE" for="edge" attr.name="labelE" attr.type="string"/>
+  <key id="relation" for="edge" attr.name="relation" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="1">
+      <data key="labelV">type</data>
+      <data key="code">Person</data>
+      <data key="name">Person</data>
+      <data key="desc">This is a type of an entity</data>
+    </node>
+    <node id="2">
+      <data key="labelV">type</data>
+      <data key="code">Manager</data>
+      <data key="name">Manager</data>
+      <data key="desc">This is a type of an entity</data>
+    </node>
+    <node id="3">
+      <data key="labelV">type</data>
+      <data key="code">Animal</data>
+      <data key="desc">This is a type of an entity</data>
+    </node>
+    <node id="4">
+      <data key="labelV">type</data>
+      <data key="code">Associate</data>
+      <data key="desc">This is a type of an entity</data>
+    </node>
+    <node id="5">
+      <data key="labelV">person</data>
+      <data key="code">Alex</data>
+      <data key="born_on">1970-12-01</data>
+      <data key="gender">Male</data>
+      <data key="personal_trait">Techie,Foodie,Hard-working</data>
+      <data key="name">Alexender Philip</data>
+    </node>
+    <node id="6">
+      <data key="labelV">person</data>
+      <data key="code">Tim</data>
+      <data key="born_on">1963-06-23</data>
+      <data key="gender">Male</data>
+      <data key="personal_trait">Techie,Smart,Movie Buff</data>
+      <data key="name">Timothy Dalton</data>
+    </node>
+    <node id="7">
+      <data key="labelV">person</data>
+      <data key="code">Sam</data>
+      <data key="born_on">2002-07-31</data>
+      <data key="gender">Female</data>
+      <data key="personal_trait">Techie,Cat-Lover,Hard-working</data>
+      <data key="name">Samantha</data>
+    </node>
+    <node id="8">
+      <data key="labelV">animal</data>
+      <data key="code">Goofy_The_Dog</data>
+      <data key="born_on">2019-07-04</data>
+      <data key="name">Goofy</data>
+    </node>
+    <node id="9">
+      <data key="labelV">person</data>
+      <data key="code">Mike</data>
+      <data key="born_on">2000-01-01</data>
+      <data key="gender">Male</data>
+      <data key="personal_trait">Techie,Smart</data>
+      <data key="name">Micheal</data>
+    </node>
+    <edge id="32" source="7" target="4">
+      <data key="labelE">type</data>
+      <data key="relation">is</data>
+    </edge>
+    <edge id="33" source="7" target="6">
+      <data key="labelE">reports_to</data>
+      <data key="relation">reports to</data>
+    </edge>
+    <edge id="37" source="8" target="3">
+      <data key="labelE">type</data>
+      <data key="relation">is</data>
+    </edge>
+    <edge id="43" source="9" target="1">
+      <data key="labelE">type</data>
+      <data key="relation">is</data>
+    </edge>
+    <edge id="44" source="9" target="4">
+      <data key="labelE">type</data>
+      <data key="relation">is</data>
+    </edge>
+    <edge id="45" source="9" target="6">
+      <data key="labelE">reports_to</data>
+      <data key="relation">reports to</data>
+    </edge>
+    <edge id="46" source="9" target="7">
+      <data key="labelE">friend_of</data>
+      <data key="relation">friend of</data>
+    </edge>
+    <edge id="47" source="9" target="8">
+      <data key="labelE">has_pet</data>
+      <data key="relation">has pet</data>
+    </edge>
+    <edge id="16" source="5" target="1">
+      <data key="labelE">type</data>
+      <data key="relation">is</data>
+    </edge>
+    <edge id="17" source="5" target="2">
+      <data key="labelE">type</data>
+      <data key="relation">is</data>
+    </edge>
+    <edge id="23" source="6" target="1">
+      <data key="labelE">type</data>
+      <data key="relation">is</data>
+    </edge>
+    <edge id="24" source="6" target="2">
+      <data key="labelE">type</data>
+      <data key="relation">is</data>
+    </edge>
+    <edge id="25" source="6" target="5">
+      <data key="labelE">reports_to</data>
+      <data key="relation">reports to</data>
+    </edge>
+    <edge id="31" source="7" target="1">
+      <data key="labelE">type</data>
+      <data key="relation">is</data>
+    </edge>
+  </graph>
+</graphml>
